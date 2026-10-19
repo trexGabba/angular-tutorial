@@ -1,0 +1,11 @@
+
+<h1>{{name}}</h1>
+
+<img [src]="imageUrl" alt="Random Image" />
+
+<button (click) = "increaseCount()">Click Me</button>
+
+<button (click) = "showEvent($event)">Click Me</button>
+<p>Button clicked {{count}} times</p>
+
+<input (input) = "updateName($event.target.value)" placeholder="Enter your name" [value]="name" />
