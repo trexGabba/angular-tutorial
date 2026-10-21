@@ -8,21 +8,9 @@ import { Component, signal } from '@angular/core';
 })
 export class Hello {
 
-  name: string = 'Arijit Singh';
-
-  imageUrl: string = 'https://git-scm.com/images/logo@2x.png';
-
-  count = signal(0);
-  increaseCount(){
-    this.count.update((val) => val + 1);
-  }
-
-  showEvent(event: Event) {
-    console.log(event.type);
-  }
+  inputEvent(event : any) {
+    console.log(event.target.value);
 
 
-  updateName(name: string) {
-    this.name = name;
   }
 }
